@@ -1,0 +1,96 @@
+
+// ****************************
+// HEADER SECTION
+// ****************************
+
+header
+  background: $darkBlue
+  display: grid
+  grid-template-columns: 300px 1fr 300px
+  border-bottom: 3px solid $orange
+  padding: 15px 0
+
+.logo
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    height: 40px
+
+.header_search
+  display: flex
+  justify-content: center
+  align-items: center
+  input[type="text"]
+    width: 300px
+    padding: 10px
+    font-size: 1rem
+    margin: 0
+    border: none
+
+.dropbtn
+  background-color: $lightBlue
+  color: $grey
+  padding: 11px 0
+  font-size: 1rem
+  min-width: 150px
+  border: none
+  cursor: pointer
+
+.dropdown
+  position: relative
+  display: inline-block
+  transition: .3s ease-in
+
+.dropdown-content
+  display: none
+  position: absolute
+  background-color: $white
+  min-width: 150px
+  z-index: 1
+  transition: .3s ease-in
+
+.dropdown-content a
+  color: $darkBlue
+  padding: 10px 16px
+  text-decoration: none
+  display: block
+  transition: .3s ease-in
+  border: 1px solid $grey
+
+.dropdown-content a:hover
+  background-color: $grey
+
+.dropdown:hover .dropdown-content
+  display: block
+
+.dropdown:hover .dropbtn
+  background-color: $highLightBlue
+
+.header_status
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  color: $grey
+  img
+    height: 15px
+    width: 30px
+
+.header_list
+  display: flex
+  margin-right: 20px
+  font-size: 1rem
+  li
+    display: inline-block
+    padding-right: 10px
+    margin: 0 10px
+    border-right: 1px solid $lightBlue
+  li:nth-child(3)
+    border-right: none
+  span
+
+  a
+    color: $grey
+    font-size: 1.2rem
+  a:hover
+    color: $orange

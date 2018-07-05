@@ -1,0 +1,32 @@
+
+.main
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+
+.main_content
+  margin-top: 50px
+  display: block
+  grid-column: 3 / 11
+  border: 1px solid $grey
+  border-radius: 10px 10px 0 0
+  padding: 3px
+
+.main_content_header
+  background: $lightBlue
+  padding: 10px 0
+  color: $grey
+  text-transform: uppercase
+  border-radius: 10px 10px 0 0
+  margin-bottom: 30px
+  span
+    margin-left: 20px
+
+.main_content_wrapper
+  font-size: 1.1em
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  label
+    padding: 15px 0
+    margin-left: 60px
+  div
+    padding: 15px 0
